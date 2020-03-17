@@ -171,13 +171,13 @@ h2 {
 
 @keyframes wiggle {
   20% {
-    transform: translateX(4px);
+    transform: translateX(1px);
   }
   40% {
-    transform: translateX(-4px);
+    transform: translateX(-1px);
   }
   60% {
-    transform: translateX(2px);
+    transform: translateX(1px);
   }
   80% {
     transform: translateX(-1px);
@@ -227,67 +227,29 @@ header, footer {
 }
 
 @keyframes blink {
-  /**
-     * At the start of the animation the dot
-     * has an opacity of .2
-     */
   0% {
     opacity: .2;
   }
-  /**
-     * At 20% the dot is fully visible and
-     * then fades out slowly
-     */
   20% {
     opacity: 1;
   }
-  /**
-     * Until it reaches an opacity of .2 and
-     * the animation can start again
-     */
   100% {
     opacity: .2;
   }
 }
 
-.saving span {
-  /**
-     * Use the blink animation, which is defined above
-     */
+.saving:hover span {
   animation-name: blink;
-  /**
-     * The animation should take 1.4 seconds
-     */
   animation-duration: 1.4s;
-  /**
-     * It will repeat itself forever
-     */
   animation-iteration-count: infinite;
-  /**
-     * This makes sure that the starting style (opacity: .2)
-     * of the animation is applied before the animation starts.
-     * Otherwise we would see a short flash or would have
-     * to set the default styling of the dots to the same
-     * as the animation. Same applies for the ending styles.
-     */
   animation-fill-mode: both;
 }
 
 .saving span:nth-child(2) {
-  /**
-     * Starts the animation of the third dot
-     * with a delay of .2s, otherwise all dots
-     * would animate at the same time
-     */
   animation-delay: .2s;
 }
 
 .saving span:nth-child(3) {
-  /**
-     * Starts the animation of the third dot
-     * with a delay of .4s, otherwise all dots
-     * would animate at the same time
-     */
   animation-delay: .4s;
 }
 

@@ -1,0 +1,25 @@
+$headfoot_color: #579c87;
+$headfoot_fontcolor: #fdcb46;
+$firstmenu_color: #FCDFDB;
+$scdmenu_color: #fff5fe;
+$trdmenu_color: #F9F9F9;
+$fourmenu_color: #FDFFFD;
+$boxshadow:  1px 1px 5px 1px #cfcfcf;
+$polices-foter_header: 'Arial Black', arial;
+$police_menu1: 'Comic Sans MS', arial;
+
+@mixin boxmenu_position{ width: 400px;
+    height: 600px;
+    margin-bottom: 60px;
+    margin-top: 60px}
+    
+    @mixin footer{
+        font-family: $polices-foter_header;
+        width: 250px;
+        height: 43px;
+        padding-top: 7px; /*permet le centrage vertical*/
+        text-align: center;
+        color: $headfoot_fontcolor;
+        background: $headfoot_color;
+        text-decoration: none;
+        padding-left: 0;;}
