@@ -23,3 +23,11 @@ $police_menu1: 'Comic Sans MS', arial;
         background: $headfoot_color;
         text-decoration: none;
         padding-left: 0;;}
+
+    @mixin trait{
+        width: 150px;
+        height: 6px;
+        margin: auto;
+        display: block;
+        background: black;
+    }    
