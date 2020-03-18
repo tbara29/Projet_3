@@ -263,17 +263,17 @@ header, footer {
 }
 
 .trait {
-  width: 40px;
-  height: 1px;
-  margin: 0px auto;
+  width: 150px;
+  height: 6px;
+  margin: auto;
   display: block;
   background: black;
 }
 
 .trait2 {
-  width: 40px;
-  height: 1px;
-  margin: 0px auto;
+  width: 150px;
+  height: 6px;
+  margin: auto;
   display: block;
   background: black;
 }

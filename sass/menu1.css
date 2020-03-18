@@ -1,10 +1,6 @@
-* {
-  font-family: 'segoe print';
-}
-
 #menu1_complet {
-  width: 700px;
-  height: 1000px;
+  width: 500px;
+  height: 700px;
   background: #FCDFDB;
   box-shadow: 1px 1px 5px 1px #cfcfcf;
   font-family: "Comic Sans MS", arial;
@@ -40,7 +36,24 @@
 
 .entree_plat_dessert {
   display: flex;
-  justify-content: center;
+    
+}
+
+.trait {
+  width: 40px;
+  height: 1px;
+  margin: 0 auto;
+  display: block;
+  background: black;
+  
+}
+
+.trait2 {
+  width: 40px;
+  height: 1px;
+  margin: 0 auto;
+  display: block;
+  background: black;
 }
 
 #entete_menu {
@@ -65,13 +78,9 @@ p {
   margin-top: 0;
 }
 
-.trait, .trait2 {
-  margin-top: 8px;
-}
-
 h5 {
   font-size: 1.4em;
-  margin: 0 40px;
+  margin: 0;
 }
 
 #contenair {
