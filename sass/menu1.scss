@@ -3,6 +3,7 @@
 
 *{
     font-family: 'segoe print';
+    color: #3d1319;
 }
 #menu1_complet{
     width: 700px;
@@ -45,7 +46,27 @@
 }
 .entree_plat_dessert{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
+
+}
+#contener{
+    width: 600px;
+    margin: auto;
+
+}
+.box{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.box2{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 
@@ -64,17 +85,48 @@ h2{
     text-align: center;
     margin-top: 35px;
     margin-bottom: 27px;
+
+}
+h3{
+    font-weight: bold;
 }
 p{
     font-size: 1.9em;
     margin-top: 0;
 }
+.box p:nth-child(1){
+    padding-left: 12px;
+}
+.box p:nth-child(3){
+    padding-left: 12px;
+}
 .trait,.trait2{
     margin-top: 8px;
 }
 h5{
-    font-size: 1.4em;
-    margin:0 40px;
+    font-size: 1.3em;
+    margin: auto;
+    
+}
+ul{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+    font-size: 0.93em;
+    
+    margin-bottom: 10px;
+}
+.prix{
+    width: 45px;
+   
+    margin-top: 17px;
+    padding: 0;
+}
+.prix p{
+    font-size: 0.93em;
+    margin-bottom: 10px;
     
 }
 
@@ -84,6 +136,7 @@ h5{
     justify-content: space-around;
 
 }
+
 .footer_txtcolor{
     height: 100px;
     color: $headfoot_fontcolor;
