@@ -30,4 +30,8 @@ $police_menu1: 'Comic Sans MS', arial;
         margin: auto;
         display: block;
         background: black;
-    }    
+    } 
+    @mixin font_color_menu1{
+        font-family: 'segoe print';
+        color: #3d1319;
+    }   

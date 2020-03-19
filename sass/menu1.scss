@@ -1,10 +1,7 @@
 
 @import "../utils/variables";
 
-*{
-    font-family: 'segoe print';
-    color: #3d1319;
-}
+@font-face {font-family: "Segoe Print"; src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot"); src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff") format("woff"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.svg#Segoe Print") format("svg"); }
 #menu1_complet{
     width: 700px;
     height: 1000px;
@@ -16,6 +13,7 @@
   
 }
 #contenair{
+    
     #menu1, #menu2, #menu3, #menu4{
         div img {
             -webkit-transform: scale(1);
@@ -51,6 +49,7 @@
 
 }
 #contener{
+    @include font_color_menu1;
     width: 600px;
     margin: auto;
 
@@ -87,8 +86,11 @@ h2{
     margin-bottom: 27px;
 
 }
-h3{
+h4{
     font-weight: bold;
+    font-size: 2em;
+    @include font_color_menu1;
+    margin-top: 0;
 }
 p{
     font-size: 1.9em;
@@ -197,9 +199,11 @@ li{
     100% { transform: translateX(0);    }
   } 
 
+ 
 
 header,footer{
     font-family: $polices-foter_header;
 }
+
 
 
