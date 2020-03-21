@@ -10,8 +10,14 @@
     font-family: $police_menu1; 
     margin: auto;
     margin-bottom: 40px;
+    position: relative;
+    
   
 }
+body{
+    margin-bottom: 200px;
+}
+
 #contenair{
     
     #menu1, #menu2, #menu3, #menu4{
@@ -37,29 +43,71 @@
     font-size: 2.3em;
 
 }
-
-#footer{
-    height: 100px;
-    background: $headfoot_color;
-}
-.entree_plat_dessert{
-    display: flex;
-    justify-content: space-between;
-    
-
-}
 #contener{
     @include font_color_menu1;
     width: 600px;
     margin: auto;
 
 }
+
+#entete_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+       & img{
+           margin-top: 30px;
+           margin-bottom: 20px;
+       }
+}
+
+.entree_plat_dessert{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.anim_bar{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.progress {
+    
+   
+    padding: 0;
+    
+    &__bar {
+        border-radius: 1px;
+        width: 100%;
+        height: 2px;
+        background:  #3d1319;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 400ms ease-in-out;
+    }
+}
+a:hover{
+    
+    & + .progress {
+        & > .progress__bar {
+                transform: scaleX(1);
+            }
+        }
+    }
+
 .box{
     width: 600px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
+
+
+
 
 .box2{
     width: 600px;
@@ -68,22 +116,12 @@
     margin-bottom: 40px;
 }
 
-
-#entete_menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-       & img{
-           margin-top: 50px;
-       }
-}
-
-
 h2{
+    font-family: $police_menu1;
     font-size: 2.3em;
     text-align: center;
     margin-top: 35px;
-    margin-bottom: 27px;
+    margin-bottom: 40px;
 
 }
 h4{
@@ -105,9 +143,15 @@ p{
 .trait,.trait2{
     margin-top: 8px;
 }
-h5{
+a{
     font-size: 1.3em;
     margin: auto;
+    text-decoration: none;
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #3d1319;
     
 }
 ul{
@@ -120,6 +164,8 @@ li{
     
     margin-bottom: 10px;
 }
+
+
 .prix{
     width: 45px;
    
@@ -138,6 +184,24 @@ li{
     justify-content: space-around;
 
 }
+#fin_menu{
+   display: flex;
+   justify-content: center;
+}
+
+#footer{
+    height: 100px;
+    width: 100%;
+    background: $headfoot_color;
+    margin-top: 50px;;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0
+    
+    ;
+    
+}
 
 .footer_txtcolor{
     height: 100px;
@@ -145,25 +209,17 @@ li{
     display: flex;
     justify-content: space-between;
     
-    font-size: 1.4em;
+    
     margin-bottom: 10px;
     
 }
-.txt_position:hover {
-   
-    animation: wiggle 0.4s ease-in-out;
-    animation-iteration-count: 1;
-  }
-  @keyframes wiggle {
-    20%  { transform: translateX(2px);  }
-    40%  { transform: translateX(-2px); }
-    60%  { transform: translateX(2px);  }
-    80%  { transform: translateX(-2px); }
-    100% { transform: translateX(0);    }
-  } 
+
+
+
 .txt_position a{
     @include footer();
 }
+
 .txt_position{
     overflow: hidden;
     display: flex;
@@ -172,6 +228,7 @@ li{
     margin-left: 15px;
     margin-top: 5px;
 }
+
    
 
 .ctct_position{
@@ -181,16 +238,16 @@ li{
     margin-right: 15px;
     margin-top: 5px;
 }
+
 .ctct_position a{
 
 
 @include footer();
 } 
-.ctct_position:hover {
-   
-    animation: wiggle 0.4s ease;
-    animation-iteration-count: 1;
-  }
+
+
+  /* Animation effet wigle du footer*/
+
   @keyframes wiggle {
     20%  { transform: translateX(2px);  }
     40%  { transform: translateX(-2px); }
@@ -199,11 +256,34 @@ li{
     100% { transform: translateX(0);    }
   } 
 
+  .txt_position:hover {
+   
+    animation: wiggle 0.4s ease-in-out;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes wiggle {
+    20%  { transform: translateX(2px);  }
+    40%  { transform: translateX(-2px); }
+    60%  { transform: translateX(2px);  }
+    80%  { transform: translateX(-2px); }
+    100% { transform: translateX(0);    }
+  } 
  
+  .ctct_position:hover {
+   
+    animation: wiggle 0.4s ease;
+    animation-iteration-count: 1;
+  }
+
 
 header,footer{
     font-family: $polices-foter_header;
 }
+
+
+
+
 
 
 
