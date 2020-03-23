@@ -1,7 +1,6 @@
 
 @import "../utils/variables";
 
-@font-face {font-family: "Segoe Print"; src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot"); src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff") format("woff"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.svg#Segoe Print") format("svg"); }
 #menu1_complet{
     width: 700px;
     height: 1000px;
@@ -16,6 +15,10 @@
 }
 body{
     margin-bottom: 200px;
+}
+
+#page{
+    max-width: 100%;
 }
 
 #contenair{
@@ -51,6 +54,7 @@ body{
 }
 
 #entete_menu{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -279,6 +283,99 @@ li{
 
 header,footer{
     font-family: $polices-foter_header;
+}
+
+
+
+@media all and (max-width: 1024px)
+{
+    #page{
+        max-width: 97%;
+        height: auto;
+        margin-top: 30px;
+    }
+    #title{
+        height: 140px;
+   
+        &#title > div{
+        max-width: 100%;
+        
+        
+     }   
+    }
+    #footer{
+        max-width: 97%;
+        height: 80px;
+     
+    }
+    .footer_txtcolor{
+        max-width: 97%;
+    }
+
+    .txt_position a,.ctct_position a{
+        font-size: 0.8em;
+        
+    }
+
+    .txt_position,.ctct_position{
+        padding-bottom: 20px;
+        margin: 0;
+    }
+    .ctct_position{
+        max-width: 50%;
+    }
+       
+    #contener,#fin_menu,.box2,.box,.entree_plat_dessert{
+        max-width: 100%;
+        max-height: 80%;
+        
+    }
+    .box li,.box2 li{
+        font-size: 0.7em;
+        margin-bottom: 15px;
+
+    }
+
+    .prix p{
+        font-size: 0.5em;
+        margin-top: 4px;
+    }
+
+    .prix p:nth-child(2),p:nth-child(3),p:nth-child(4){
+        margin-top: 40px;
+    }
+    ul{
+        max-width: 70%;
+        text-align: justify;;
+    }
+
+    h1{
+        margin: auto;
+    }
+    h2{
+        font-size: 2em;
+    }
+
+    body{
+        max-width: 97%;
+    }
+
+    header{
+        max-width: 97%;
+        height: 140px;
+        font-size: 0.8em;
+    }
+    #menu1_complet{
+        width: 97%;
+        height: auto;
+        padding: 8px;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
 
 
