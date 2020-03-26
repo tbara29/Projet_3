@@ -138,12 +138,10 @@ p{
     font-size: 1.9em;
     margin-top: 0;
 }
-.box p:nth-child(1){
+p:nth-child(1),p:nth-child(3){
     padding-left: 12px;
 }
-.box p:nth-child(3){
-    padding-left: 12px;
-}
+
 .trait,.trait2{
     margin-top: 8px;
 }
@@ -174,9 +172,9 @@ li{
     width: 45px;
    
     margin-top: 17px;
-    padding: 0;
+   
 }
-.prix p{
+p{
     font-size: 0.93em;
     margin-bottom: 10px;
     
@@ -292,7 +290,7 @@ header,footer{
     #page{
         max-width: 97%;
         height: auto;
-        margin-top: 30px;
+        margin-top: 30px auto;
     }
     #title{
         height: 140px;
@@ -331,19 +329,27 @@ header,footer{
         
     }
     .box li,.box2 li{
-        font-size: 0.7em;
+        font-size: 0.6em;
         margin-bottom: 15px;
 
     }
 
     .prix p{
-        font-size: 0.5em;
+        font-size: 0.6em;
         margin-top: 4px;
+        padding: 0;
+        
     }
 
-    .prix p:nth-child(2),p:nth-child(3),p:nth-child(4){
-        margin-top: 40px;
+  .prix{
+      padding-left: 17px;
+  }
+   
+
+    .prix p:nth-child(2),.prix p:nth-child(3),.prix p:nth-child(4){
+        margin-top: 28px;
     }
+
     ul{
         max-width: 70%;
         text-align: justify;;
@@ -372,10 +378,23 @@ header,footer{
     }
 
     img{
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
+       
     }
-    
+    a{
+        font-size: 0.8em;
+        margin: auto 9px;
+        
+    }
+    .anim_bar {
+       max-width: 29%;
+      
+    }
+    .entree_plat_dessert{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 
