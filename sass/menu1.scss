@@ -1,42 +1,40 @@
-
 @import "../utils/variables";
 
-#menu1_complet{
+#menu1_complet {
     width: 700px;
     height: 1000px;
     background: $firstmenu_color;
-    box-shadow: $boxshadow; 
-    font-family: $police_menu1; 
+    box-shadow: $boxshadow;
+    font-family: $police_menu1;
     margin: auto;
     margin-bottom: 40px;
     position: relative;
-    
-  
 }
-body{
+
+body {
     margin-bottom: 200px;
 }
 
-#page{
+#page {
     max-width: 100%;
 }
 
-#contenair{
-    
-    #menu1, #menu2, #menu3, #menu4{
+#contenair {
+    #menu1, #menu2, #menu3, #menu4 {
         div img {
             -webkit-transform: scale(1);
             transform: scale(1);
             -webkit-transition: .3s ease-in-out;
             transition: .3s ease-in-out;
         }
-         div:hover img {
+
+        div:hover img {
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
-           
         }
     }
-    }
+}
+
 #title {
     height: 200px;
     background: $headfoot_color;
@@ -44,185 +42,167 @@ body{
     display: flex;
     justify-content: center;
     font-size: 2.3em;
-
 }
-#contener{
+
+#contener {
     @include font_color_menu1;
+
     width: 600px;
     margin: auto;
-
 }
 
-#entete_menu{
-    
+#entete_menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-       & img{
-           margin-top: 30px;
-           margin-bottom: 20px;
-       }
+
+    & img {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
 }
 
-.entree_plat_dessert{
+.entree_plat_dessert {
     display: flex;
     justify-content: space-between;
-    
-
 }
 
-.anim_bar{
+.anim_bar {
     display: flex;
     flex-direction: column;
-
 }
 
-
 .progress {
-    
-   
     padding: 0;
-    
+
     &__bar {
         border-radius: 1px;
         width: 100%;
         height: 2px;
-        background:  #3d1319;
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform 400ms ease-in-out;
+        background: #3d1319;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform 400ms ease-in-out;
     }
 }
-a:hover{
-    
+
+a:hover {
     & + .progress {
         & > .progress__bar {
-                transform: scaleX(1);
-            }
+            transform: scaleX(1);
         }
     }
+}
 
-.box{
+.box {
     width: 600px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
 
-
-
-
-
-.box2{
+.box2 {
     width: 600px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
 
-h2{
+h2 {
     font-family: $police_menu1;
     font-size: 2.3em;
     text-align: center;
     margin-top: 35px;
     margin-bottom: 40px;
-
 }
-h4{
+
+h4 {
     font-weight: bold;
     font-size: 2em;
+
     @include font_color_menu1;
+
     margin-top: 0;
 }
-p{
+
+p {
     font-size: 1.9em;
     margin-top: 0;
 }
-p:nth-child(1),p:nth-child(3){
+
+p:nth-child(1), p:nth-child(3) {
     padding-left: 12px;
 }
 
-.trait,.trait2{
+.trait, .trait2 {
     margin-top: 8px;
 }
-a{
+
+a {
     font-size: 1.3em;
     margin: auto;
     text-decoration: none;
-
     padding: 0;
     margin: 0;
     text-decoration: none;
     color: #3d1319;
-    
 }
-ul{
+
+ul {
     padding: 0;
 }
 
-li{
+li {
     list-style-type: none;
     font-size: 0.93em;
-    
     margin-bottom: 10px;
 }
 
-
-.prix{
+.prix {
     width: 45px;
-   
     margin-top: 17px;
-   
 }
-p{
+
+p {
     font-size: 0.93em;
     margin-bottom: 10px;
-    
 }
 
-#contenair{
+#contenair {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
-}
-#fin_menu{
-   display: flex;
-   justify-content: center;
 }
 
-#footer{
+#fin_menu {
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
     height: 100px;
     width: 100%;
     background: $headfoot_color;
-    margin-top: 50px;;
+    margin-top: 50px;
     position: fixed;
     bottom: 0;
     left: 0;
-    right: 0
-    
-    ;
-    
+    right: 0;
 }
 
-.footer_txtcolor{
+.footer_txtcolor {
     height: 100px;
     color: $headfoot_fontcolor;
     display: flex;
     justify-content: space-between;
-    
-    
     margin-bottom: 10px;
-    
 }
 
-
-
-.txt_position a{
-    @include footer();
+.txt_position a {
+    @include footer;
 }
 
-.txt_position{
+.txt_position {
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -231,9 +211,7 @@ p{
     margin-top: 5px;
 }
 
-   
-
-.ctct_position{
+.ctct_position {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,165 +219,176 @@ p{
     margin-top: 5px;
 }
 
-.ctct_position a{
+.ctct_position a {
+    @include footer;
+}
 
+/* Animation effet wigle du footer*/
 
-@include footer();
-} 
+@keyframes wiggle {
+    20% {
+        transform: translateX(2px);
+    }
 
+    40% {
+        transform: translateX(-2px);
+    }
 
-  /* Animation effet wigle du footer*/
+    60% {
+        transform: translateX(2px);
+    }
 
-  @keyframes wiggle {
-    20%  { transform: translateX(2px);  }
-    40%  { transform: translateX(-2px); }
-    60%  { transform: translateX(2px);  }
-    80%  { transform: translateX(-2px); }
-    100% { transform: translateX(0);    }
-  } 
+    80% {
+        transform: translateX(-2px);
+    }
 
-  .txt_position:hover {
-   
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.txt_position:hover {
     animation: wiggle 0.4s ease-in-out;
     animation-iteration-count: 1;
-  }
+}
 
-  @keyframes wiggle {
-    20%  { transform: translateX(2px);  }
-    40%  { transform: translateX(-2px); }
-    60%  { transform: translateX(2px);  }
-    80%  { transform: translateX(-2px); }
-    100% { transform: translateX(0);    }
-  } 
- 
-  .ctct_position:hover {
-   
+@keyframes wiggle {
+    20% {
+        transform: translateX(2px);
+    }
+
+    40% {
+        transform: translateX(-2px);
+    }
+
+    60% {
+        transform: translateX(2px);
+    }
+
+    80% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.ctct_position:hover {
     animation: wiggle 0.4s ease;
     animation-iteration-count: 1;
-  }
+}
 
-
-header,footer{
+header, footer {
     font-family: $polices-foter_header;
 }
 
-
-
-@media all and (max-width: 1024px)
-{
-    #page{
+@media all and (max-width: 1024px) {
+    #page {
         max-width: 97%;
         height: auto;
         margin-top: 30px auto;
     }
-    #title{
+
+    #title {
         height: 140px;
-   
-        &#title > div{
-        max-width: 100%;
-        
-        
-     }   
+
+        &#title > div {
+            max-width: 100%;
+        }
     }
-    #footer{
+
+    #footer {
         max-width: 97%;
         height: 80px;
-     
     }
-    .footer_txtcolor{
+
+    .footer_txtcolor {
         max-width: 97%;
     }
 
-    .txt_position a,.ctct_position a{
+    .txt_position a, .ctct_position a {
         font-size: 0.8em;
-        
     }
 
-    .txt_position,.ctct_position{
+    .txt_position, .ctct_position {
         padding-bottom: 20px;
         margin: 0;
     }
-    .ctct_position{
+
+    .ctct_position {
         max-width: 50%;
     }
-       
-    #contener,#fin_menu,.box2,.box,.entree_plat_dessert{
+
+    #contener, #fin_menu, .box2, .box, .entree_plat_dessert {
         max-width: 100%;
         max-height: 80%;
-        
     }
-    .box li,.box2 li{
+
+    .box li, .box2 li {
         font-size: 0.6em;
         margin-bottom: 15px;
-
     }
 
-    .prix p{
+    .prix p {
         font-size: 0.6em;
         margin-top: 4px;
         padding: 0;
-        
     }
 
-  .prix{
-      padding-left: 17px;
-  }
-   
+    .prix {
+        padding-left: 17px;
+    }
 
-    .prix p:nth-child(2),.prix p:nth-child(3),.prix p:nth-child(4){
+    .prix p:nth-child(2), .prix p:nth-child(3), .prix p:nth-child(4) {
         margin-top: 28px;
     }
 
-    ul{
+    ul {
         max-width: 70%;
-        text-align: justify;;
+        text-align: justify;
     }
 
-    h1{
+    h1 {
         margin: auto;
     }
-    h2{
+
+    h2 {
         font-size: 2em;
     }
 
-    body{
+    body {
         max-width: 97%;
     }
 
-    header{
+    header {
         max-width: 97%;
         height: 140px;
         font-size: 0.8em;
     }
-    #menu1_complet{
+
+    #menu1_complet {
         width: 97%;
         height: auto;
         padding: 8px;
     }
 
-    img{
+    img {
         max-width: 90%;
         height: auto;
-       
     }
-    a{
+
+    a {
         font-size: 0.8em;
         margin: auto 9px;
-        
     }
+
     .anim_bar {
-       max-width: 29%;
-      
+        max-width: 29%;
     }
-    .entree_plat_dessert{
+
+    .entree_plat_dessert {
         display: flex;
         justify-content: space-between;
     }
 }
-
-
-
-
-
-
-
