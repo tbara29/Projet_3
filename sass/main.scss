@@ -1,13 +1,9 @@
 @import "../utils/variables";
 
-
-
 body {
-   
     margin: auto;
     background-color: #fff;
     margin-bottom: 200px;
-    
 }
 
 #page {
@@ -29,48 +25,40 @@ body {
 }
 
 #contenair {
-    
-        a{
-            opacity: 0.4;
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            -webkit-transition: .3s ease-in-out;
-            transition: .3s ease-in-out;
-            
-            
-        }
-
-        #menu1:hover a{
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-            opacity: 1;
-            
-            
-        }
-        #menu2:hover a{
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-            opacity: 1;
-            
-            
-        }
-        #menu3:hover a{
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-            opacity: 1;
-            
-            
-        }
-        #menu4:hover a{
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-            opacity: 1;
-            
-            
-        }
+    a {
+        opacity: 0.4;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
     }
 
-#menu1 a, #menu2 a, #menu3 a, #menu4 a{
+    #menu1:hover a {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    #menu2:hover a {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    #menu3:hover a {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    #menu4:hover a {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+#menu1 a, #menu2 a, #menu3 a, #menu4 a {
     text-decoration: none;
     width: 100%;
     height: 100%;
@@ -80,16 +68,15 @@ body {
     justify-content: center;
 }
 
-
 #menu1 {
     background-color: $firstmenu_color;
-   a, h2{
-       color: #3d1319 ;
-       margin: 0;
-       padding: 0;
 
-   }
-    
+    a, h2 {
+        color: #3d1319;
+        margin: 0;
+        padding: 0;
+    }
+
     @include boxmenu_position;
 
     box-shadow: $boxshadow;
@@ -112,68 +99,74 @@ h2 {
 
 #menu2 {
     background-color: #fff5fe;
-    h2{
+
+    h2 {
         color: #d8852e;
     }
-    
+
     @include boxmenu_position;
 
     box-shadow: $boxshadow;
 }
-.degradé{
 
+.degradé {
     font-size: 1.7em;
-    background-image: linear-gradient(to right, rgb(216,133,46) 0%,rgb(144,91,253) 100%);  
+    background-image: linear-gradient(to right, rgb(216, 133, 46) 0%, rgb(144, 91, 253) 100%);
     background: -webkit-linear-gradient();
     -webkit-background-clip: text;
     -webkit-background-clip: text;
-    -moz-background-clip: text; 
+    -moz-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
 #menu3 {
     background-color: #f9f9f9;
-   h2{
-       color: #0887fb;
-   }
+
+    h2 {
+        color: #0887fb;
+    }
+
     @include boxmenu_position;
 
     box-shadow: $boxshadow;
 }
-.degradé_3{
 
+.degradé_3 {
     font-size: 1.7em;
-    background-image: linear-gradient(to right, #0431df 0%,#0887fb 100%);  
+    background-image: linear-gradient(to right, #0431df 0%, #0887fb 100%);
     background: -webkit-linear-gradient();
     -webkit-background-clip: text;
     -webkit-background-clip: text;
-    -moz-background-clip: text; 
+    -moz-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
 #menu4 {
     background-color: #fdfffd;
-    h2{
+
+    h2 {
         color: #72bf56;
     }
+
     @include boxmenu_position;
 
     box-shadow: $boxshadow;
 }
-.degradé_4{
 
+.degradé_4 {
     font-size: 1.7em;
-    background-image: linear-gradient(to right, #3d9339 0%,#bfff7e 100%);  
+    background-image: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
     background: -webkit-linear-gradient();
     -webkit-background-clip: text;
     -webkit-background-clip: text;
-    -moz-background-clip: text; 
+    -moz-background-clip: text;
     background-clip: text;
     color: transparent;
 }
-#menu1, #menu2, #menu3, #menu4{
+
+#menu1, #menu2, #menu3, #menu4 {
     overflow: hidden;
 }
 
@@ -368,39 +361,34 @@ header, footer {
     height: 60px;
 }
 
-.fonts_menu1 h2{
-    
+.fonts_menu1 h2 {
     color: #3d1319;
     text-decoration: none;
-    
 }
 
-.fonts_menu1{
-    p{
-       
+.fonts_menu1 {
+    p {
         margin: 0;
     }
-    h2{
+
+    h2 {
         margin: 0;
         font-size: 2.4rem;
     }
+
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: -15px;
-   
-
 }
 
-.fonts_menu1, h2, p{
+.fonts_menu1, h2, p {
     font-family: 'Segoe print';
 }
 
-#menu1_icone_musik{
-   padding: 0;
-   z-index: 10;
-   
-
+#menu1_icone_musik {
+    padding: 0;
+    z-index: 10;
 }
 
 #footer {
@@ -414,9 +402,4 @@ header, footer {
     right: 0;
 }
 
-@media all and (max-width: 1024px){
-
-
-
-    
-}
+@media all and (max-width: 1024px) {}
