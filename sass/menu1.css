@@ -39,7 +39,7 @@ body {
 }
 
 #contener {
-  font-family: 'segoe print';
+  font-family: 'segoe print', 'bradley hand bold';
   color: #3d1319;
   width: 600px;
   margin: auto;
@@ -109,7 +109,7 @@ h2 {
 h4 {
   font-weight: bold;
   font-size: 2em;
-  font-family: 'segoe print';
+  font-family: 'segoe print', 'bradley hand bold';
   color: #3d1319;
   margin-top: 0;
 }
@@ -251,7 +251,7 @@ p {
 
 .txt_position:hover {
   animation: wiggle 0.4s ease-in-out;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
 }
 
 @keyframes wiggle {
@@ -274,7 +274,7 @@ p {
 
 .ctct_position:hover {
   animation: wiggle 0.4s ease;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
 }
 
 header, footer {

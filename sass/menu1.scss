@@ -249,7 +249,7 @@ p {
 
 .txt_position:hover {
     animation: wiggle 0.4s ease-in-out;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
 }
 
 @keyframes wiggle {
@@ -276,7 +276,7 @@ p {
 
 .ctct_position:hover {
     animation: wiggle 0.4s ease;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
 }
 
 header, footer {
