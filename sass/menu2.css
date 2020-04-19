@@ -1,12 +1,21 @@
 #menu1_complet {
-  width: 700px;
-  height: 1000px;
-  background: #FCDFDB;
+  min-width: 900px;
+  min-height: 1000px;
   box-shadow: 1px 1px 5px 1px #cfcfcf;
   font-family: "Comic Sans MS", arial;
   margin: auto;
   margin-bottom: 40px;
   position: relative;
+  background-color: #fff5fe;
+  width: 400px;
+  height: 600px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  box-shadow: 1px 1px 5px 1px #cfcfcf;
+}
+
+#menu1_complet h2 {
+  color: #d8852e;
 }
 
 body {
@@ -40,9 +49,15 @@ body {
 
 #contener {
   font-family: 'segoe print', 'bradley hand bold';
-  color: #3d1319;
-  width: 600px;
+  width: 850px;
   margin: auto;
+  background-image: linear-gradient(to bottom, #d8852e 0%, #905bfd 100%);
+  background: -webkit-linear-gradient();
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 #entete_menu {
@@ -57,13 +72,23 @@ body {
 }
 
 .entree_plat_dessert {
+  max-width: 80%;
   display: flex;
   justify-content: space-between;
+  margin: auto;
+}
+
+img {
+  max-width: 50%;
+  height: 22px;
 }
 
 .anim_bar {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  width: 200px;
+  height: 24px;
 }
 
 .progress {
@@ -74,7 +99,8 @@ body {
   border-radius: 1px;
   width: 100%;
   height: 2px;
-  background: #3d1319;
+  background-image: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
+  background: -webkit-linear-gradient();
   transform-origin: left;
   transform: scaleX(0);
   transition: transform 400ms ease-in-out;
@@ -85,7 +111,7 @@ a:hover + .progress > .progress__bar {
 }
 
 .box {
-  width: 600px;
+  width: 700px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -106,11 +132,21 @@ h2 {
   margin-bottom: 40px;
 }
 
+#entete_menu h1 {
+  background-image: linear-gradient(to right, #d8852e 0%, #905bfd 100%);
+  background: -webkit-linear-gradient();
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 50px;
+}
+
 h4 {
   font-weight: bold;
   font-size: 2em;
   font-family: 'segoe print', 'bradley hand bold';
-  color: #3d1319;
   margin-top: 0;
 }
 
@@ -125,8 +161,8 @@ p:nth-child(1), p:nth-child(3) {
 
 .trait, .trait2 {
   margin-top: 8px;
-  background: #3d1319;
-  color: transparent;
+  width: 80px;
+  height: 14px;
 }
 
 a {
@@ -136,7 +172,6 @@ a {
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: #3d1319;
 }
 
 ul {
@@ -355,7 +390,7 @@ header, footer {
     padding: 8px;
   }
   img {
-    max-width: 90%;
+    max-width: 35%;
     height: auto;
   }
   a {
