@@ -40,7 +40,6 @@ body {
 
 #contener {
   font-family: 'segoe print', 'bradley hand bold';
-  color: #3d1319;
   width: 600px;
   margin: auto;
 }
@@ -110,7 +109,6 @@ h4 {
   font-weight: bold;
   font-size: 2em;
   font-family: 'segoe print', 'bradley hand bold';
-  color: #3d1319;
   margin-top: 0;
 }
 
@@ -135,7 +133,6 @@ a {
   text-decoration: none;
   padding: 0;
   margin: 0;
-  text-decoration: none;
   color: #3d1319;
 }
 
