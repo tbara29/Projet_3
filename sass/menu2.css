@@ -1,17 +1,13 @@
 #menu1_complet {
-  width: 1189px;
-  height: 1300px;
+  width: 700px;
+  height: 1000px;
   box-shadow: 1px 1px 5px 1px #cfcfcf;
   font-family: "Comic Sans MS", arial;
   margin: auto;
   margin-bottom: 40px;
+  margin-top: 260px;
   position: relative;
   background-color: #fff5fe;
-  width: 400px;
-  height: 600px;
-  margin-bottom: 60px;
-  margin-top: 60px;
-  box-shadow: 1px 1px 5px 1px #cfcfcf;
 }
 
 #menu1_complet h2 {
@@ -55,6 +51,10 @@ body {
   margin-bottom: 100px;
 }
 
+#title div {
+  text-align: center;
+}
+
 #contener {
   font-family: 'segoe print', 'bradley hand bold';
   max-width: 100%;
@@ -95,18 +95,20 @@ img {
   min-width: 16%;
   height: 22px;
   margin-top: 10px;
+  margin: auto;
 }
 
 .anim_bar {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 400px;
+  width: 600px;
 }
 
 .progress {
   padding: 0;
   max-width: 90%;
+  margin-left: 10px;
 }
 
 .progress__bar {
@@ -184,7 +186,7 @@ p {
 }
 
 a {
-  font-size: 1.3em;
+  font-size: 1rem;
   margin: auto;
   text-decoration: none;
   text-decoration: none;

@@ -1,12 +1,13 @@
 #menu1_complet {
   width: 700px;
-  height: 1000px;
+  height: 1200px;
   background: #FCDFDB;
   box-shadow: 1px 1px 5px 1px #cfcfcf;
   font-family: "Comic Sans MS", arial;
   margin: auto;
   margin-bottom: 40px;
   position: relative;
+  margin-top: 260px;
 }
 
 body {
@@ -36,11 +37,17 @@ body {
   display: flex;
   justify-content: center;
   font-size: 2.3em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin-bottom: 100px;
 }
 
 #contener {
   font-family: 'segoe print', 'bradley hand bold';
-  width: 600px;
+  max-width: 100%;
   margin: auto;
 }
 
@@ -50,9 +57,16 @@ body {
   align-items: center;
 }
 
+#entete_menu p {
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
 #entete_menu img {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  min-width: 80px;
+  height: 70px;
+  margin-top: 40px;
 }
 
 .entree_plat_dessert {
@@ -60,9 +74,17 @@ body {
   justify-content: space-between;
 }
 
+img {
+  min-width: 30%;
+  margin-top: 10px;
+  margin: auto 25px;
+}
+
 .anim_bar {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  width: 600px;
 }
 
 .progress {
@@ -87,14 +109,18 @@ a:hover + .progress > .progress__bar {
   width: 600px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin: 40px auto;
 }
 
 .box2 {
   width: 600px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin: 40px auto;
+}
+
+.box2 .prix p {
+  padding: 0;
 }
 
 h2 {
@@ -132,7 +158,6 @@ a {
   margin: auto;
   text-decoration: none;
   padding: 0;
-  margin: 0;
   color: #3d1319;
 }
 
@@ -165,6 +190,17 @@ p {
 #fin_menu {
   display: flex;
   justify-content: center;
+}
+
+#fin_menu p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#fin_menu img {
+  min-width: 70px;
+  height: 50px;
+  margin: 0;
 }
 
 #footer {
