@@ -348,7 +348,8 @@ header, footer {
     height: 80px;
   }
   .footer_txtcolor {
-    max-width: 100%;
+    max-width: 97%;
+    margin: auto;
   }
   .txt_position a, .ctct_position a {
     font-size: 0.8em;
@@ -367,6 +368,13 @@ header, footer {
   .box li, .box2 li {
     font-size: 0.6em;
     margin-bottom: 15px;
+  }
+  .box.prix:nth-child(2) {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .description_plat li {
+    font-size: 0.8rem;
   }
   .prix p {
     font-size: 0.6em;
