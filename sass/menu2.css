@@ -340,6 +340,9 @@ header, footer {
   #title#title > div {
     max-width: 100%;
   }
+  #entete_menu h1 {
+    margin-top: 25px;
+  }
   #footer {
     max-width: 100%;
     height: 80px;
@@ -401,7 +404,7 @@ header, footer {
   img {
     max-width: 90%;
     height: auto;
-    margin-top: 0;
+    margin: 0 auto;
   }
   a {
     font-size: 0.8em;
@@ -409,9 +412,13 @@ header, footer {
   }
   .anim_bar {
     margin: auto 10px;
+    width: auto;
   }
   .entree_plat_dessert {
     display: flex;
     justify-content: space-between;
+  }
+  .description_plat {
+    margin-left: 10px;
   }
 }
