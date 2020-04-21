@@ -1,5 +1,9 @@
 @import "../utils/variables";
-
+*{
+    font-family: 'CopyrightHouseIndustriesNotLicensedforDesktopUse';
+    font-weight: normal;
+    font-style: normal;   
+}
 #menu1_complet {
     width: 700px;
     height: 1200px;
@@ -37,7 +41,10 @@ body {
 }
 
 #title {
-    height: 200px;
+    h1{
+        font-family: "Arial Black", arial;
+    }
+    height: 170px;
     background: $headfoot_color;
     color: $headfoot_fontcolor;
     display: flex;
@@ -136,7 +143,7 @@ a:hover {
 
 h2 {
     font-family: $police_menu1;
-    font-size: 2.3em;
+    font-size: 2.6em;
     text-align: center;
     margin-top: 35px;
     margin-bottom: 40px;
@@ -156,9 +163,7 @@ p {
     margin-top: 0;
 }
 
-p:nth-child(1), p:nth-child(3) {
-    padding-left: 12px;
-}
+
 
 .trait, .trait2 {
     margin-top: 8px;
@@ -167,7 +172,7 @@ p:nth-child(1), p:nth-child(3) {
 }
 
 a {
-    font-size: 1.3em;
+    font-size: 1.9em;
     margin: auto;
     text-decoration: none;
     padding: 0;
@@ -180,19 +185,53 @@ ul {
 
 li {
     list-style-type: none;
-    font-size: 0.93em;
+    font-size: 1.4em;
     margin-bottom: 10px;
 }
 
 .prix {
+   
+    width: 45px;
+    margin-top: 17px;
+}
+.prix p:nth-child(1){
+    padding-left: 14px;
+}
+.prix p:nth-child(2){
+    padding-left: 11px;
+}
+.prix p:nth-child(3){
+    padding-left: 11px;
+}
+
+.prix p:nth-child(4){
+    padding-left: 4px;
+}
+
+p {
+    font-size: 1.3em;
+    margin-bottom: 14px;
+}
+
+.prix2 {
+    p:nth-child(1){
+        padding-left: 5px;
+    }
+    p:nth-child(3){
+        padding-left: 5px;
+    }
+    
+    
+    
+p {
+   
+    font-size: 1.3em;
+    margin-bottom: 13px;
+}
     width: 45px;
     margin-top: 17px;
 }
 
-p {
-    font-size: 0.93em;
-    margin-bottom: 10px;
-}
 
 #contenair {
     display: flex;
@@ -215,7 +254,7 @@ p {
 }
 
 #footer {
-    height: 100px;
+    height: 87px;
     width: 100%;
     background: $headfoot_color;
     margin-top: 50px;
@@ -238,6 +277,9 @@ p {
 }
 
 .txt_position {
+    a{
+        font-size: 1.4rem;
+    }
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -247,6 +289,9 @@ p {
 }
 
 .ctct_position {
+    a{
+        font-size: 1.4rem;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
@@ -406,6 +451,7 @@ header, footer {
         width: 97%;
         height: auto;
         padding: 8px;
+        margin-top: 0;
     }
 
     img {

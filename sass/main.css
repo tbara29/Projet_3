@@ -10,17 +10,26 @@ body {
 }
 
 #title {
-  height: 200px;
+  height: 170px;
   background: #579c87;
   color: #fdcb46;
   display: flex;
   justify-content: center;
   font-size: 2.3em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 #footer {
   height: 100px;
   background: #579c87;
+}
+
+#contenair {
+  margin-top: 150px;
 }
 
 #contenair a {
@@ -67,6 +76,7 @@ body {
 
 #menu1 {
   background-color: #FCDFDB;
+  margin: auto;
   width: 400px;
   height: 600px;
   margin-bottom: 60px;
@@ -78,6 +88,10 @@ body {
   color: #3d1319;
   margin: 0;
   padding: 0;
+}
+
+#menu1 p, #menu1 h2 {
+  font-family: 'CopyrightHouseIndustriesNotLicensedforDesktopUse';
 }
 
 #menu1_complet {
@@ -97,6 +111,8 @@ h2 {
 
 #menu2 {
   background-color: #fff5fe;
+  margin: auto;
+  margin-right: 120px;
   width: 400px;
   height: 600px;
   margin-bottom: 60px;
@@ -106,6 +122,11 @@ h2 {
 
 #menu2 h2 {
   color: #d8852e;
+  font-family: 'RursusCompactMonoMedium';
+}
+
+#menu2 p {
+  font-family: 'RursusCompactMonoMedium';
 }
 
 .degradé {
@@ -121,6 +142,7 @@ h2 {
 
 #menu3 {
   background-color: #f9f9f9;
+  margin: auto;
   width: 400px;
   height: 600px;
   margin-bottom: 60px;
@@ -130,6 +152,11 @@ h2 {
 
 #menu3 h2 {
   color: #0887fb;
+  font-family: 'DancingScriptRegular';
+}
+
+#menu3 p {
+  font-family: 'DancingScriptRegular';
 }
 
 .degradé_3 {
@@ -145,6 +172,7 @@ h2 {
 
 #menu4 {
   background-color: #fdfffd;
+  margin: auto;
   width: 400px;
   height: 600px;
   margin-bottom: 60px;
@@ -154,6 +182,11 @@ h2 {
 
 #menu4 h2 {
   color: #72bf56;
+  font-family: 'AlexanderRegular';
+}
+
+#menu4 p {
+  font-family: 'AlexanderRegular';
 }
 
 .degradé_4 {
@@ -402,9 +435,11 @@ header, footer {
   font-family: 'Segoe print';
 }
 
-#menu1_icone_musik {
-  padding: 0;
-  z-index: 10;
+#menu1_icone_musik img {
+  min-width: 80px;
+  height: 70px;
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 #footer {
@@ -416,4 +451,55 @@ header, footer {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+@media all and (max-width: 1024px) {
+  #page {
+    max-width: 97%;
+    height: auto;
+    margin-top: 30px auto;
+  }
+  #title {
+    font-size: 1.8rem;
+  }
+  #contenair {
+    margin-top: 100px;
+  }
+  #menu1 {
+    max-width: 90%;
+    height: 380px;
+  }
+  #menu2 {
+    max-width: 90%;
+    height: 380px;
+    margin: auto;
+  }
+  #menu2 p {
+    font-size: 1.5rem;
+  }
+  #menu3 {
+    max-width: 90%;
+    height: 380px;
+  }
+  #menu4 {
+    max-width: 90%;
+    height: 380px;
+  }
+  #footer {
+    font-size: 0.8rem;
+  }
+  .fonts_menu1 p {
+    font-size: 1.7rem;
+  }
+  .fonts_menu1 h2 {
+    font-size: 2.4rem;
+  }
+  .txt_position {
+    max-width: 28%;
+    margin-bottom: 20px;
+  }
+  .ctct_position {
+    max-width: 30%;
+    margin-bottom: 20px;
+  }
 }
