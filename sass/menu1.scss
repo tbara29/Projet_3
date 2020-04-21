@@ -142,7 +142,7 @@ a:hover {
 }
 
 h2 {
-    font-family: $police_menu1;
+   
     font-size: 2.6em;
     text-align: center;
     margin-top: 35px;
@@ -195,13 +195,13 @@ li {
     margin-top: 17px;
 }
 .prix p:nth-child(1){
-    padding-left: 14px;
+    padding-left: 13px;
 }
 .prix p:nth-child(2){
     padding-left: 11px;
 }
 .prix p:nth-child(3){
-    padding-left: 11px;
+    padding-left: 10px;
 }
 
 .prix p:nth-child(4){
@@ -218,7 +218,7 @@ p {
         padding-left: 5px;
     }
     p:nth-child(3){
-        padding-left: 5px;
+        padding-left: 3px;
     }
     
     
@@ -302,6 +302,9 @@ p {
 .ctct_position a {
     @include footer;
 }
+.fonts_menu1 h2{
+    margin-top: 20px;
+}
 
 /* Animation effet wigle du footer*/
 
@@ -363,7 +366,7 @@ header, footer {
     font-family: $polices-foter_header;
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1920px) {
     #page {
         max-width: 97%;
         height: auto;
@@ -388,7 +391,7 @@ header, footer {
     }
 
     .txt_position a, .ctct_position a {
-        font-size: 0.8em;
+        font-size: 1rem;
     }
 
     .txt_position, .ctct_position {
@@ -407,7 +410,14 @@ header, footer {
 
     .box li, .box2 li {
         font-size: 0.6em;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+    }
+   .description_plat{
+       margin-left: 15px;
+       
+    }
+    .box, .box2{
+        margin: auto;
     }
 
     .prix p {
@@ -422,6 +432,15 @@ header, footer {
 
     .prix p:nth-child(2), .prix p:nth-child(3), .prix p:nth-child(4) {
         margin-top: 28px;
+    }
+    .prix2 p:nth-child(2){
+        margin-top: 36px;
+
+    }
+    .prix2 p:nth-child(3){
+        margin-top: 21px;
+
+
     }
 
     ul {
@@ -455,6 +474,7 @@ header, footer {
     }
 
     img {
+        margin: auto;
         max-width: 90%;
         height: auto;
     }
@@ -471,5 +491,19 @@ header, footer {
     .entree_plat_dessert {
         display: flex;
         justify-content: space-between;
+    }
+    #contener{
+        a{
+            font-size: 1.2rem;
+
+        }
+        li{
+            font-size: 0.9rem;
+
+        }
+        p{
+            font-size: 0.9rem;
+
+        }
     }
 }
