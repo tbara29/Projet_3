@@ -34,7 +34,7 @@ body {
     margin-top: 150px;
    
     a {
-        opacity: 0.4;
+        opacity: 1;
         -webkit-transform: scale(1);
         transform: scale(1);
         -webkit-transition: .3s ease-in-out;
@@ -44,25 +44,25 @@ body {
     #menu1:hover a {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
-        opacity: 1;
+        opacity: 0.4;
     }
 
     #menu2:hover a {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
-        opacity: 1;
+        opacity: 0.4;
     }
 
     #menu3:hover a {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
-        opacity: 1;
+        opacity: 0.4;
     }
 
     #menu4:hover a {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
-        opacity: 1;
+        opacity: 0.4;
     }
 }
 
@@ -358,7 +358,7 @@ header, footer {
     }
 }
 
-.saving:hover span {
+.saving span {
     animation-name: blink;
     animation-duration: 1.4s;
     animation-iteration-count: infinite;

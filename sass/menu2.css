@@ -338,7 +338,7 @@ header, footer {
 
 @media all and (max-width: 1024px) {
   #page {
-    max-width: 100%;
+    max-width: 97%;
     height: auto;
     margin-top: 30px auto;
   }
@@ -348,19 +348,15 @@ header, footer {
   #title#title > div {
     max-width: 100%;
   }
-  #entete_menu h1 {
-    margin-top: 25px;
-  }
   #footer {
-    max-width: 100%;
+    max-width: 97%;
     height: 80px;
   }
   .footer_txtcolor {
     max-width: 97%;
-    margin: auto;
   }
   .txt_position a, .ctct_position a {
-    font-size: 0.8em;
+    font-size: 1rem;
   }
   .txt_position, .ctct_position {
     padding-bottom: 20px;
@@ -369,37 +365,49 @@ header, footer {
   .ctct_position {
     max-width: 50%;
   }
-  #contener, #fin_menu, .box2, .box, .entree_plat_dessert {
+  #contener, #fin_menu, .entree_plat_dessert {
     max-width: 100%;
     max-height: 80%;
   }
   .box li, .box2 li {
     font-size: 0.6em;
+    margin-bottom: 20px;
+  }
+  .description_plat {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .choix_menu {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .box, .box2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 17%;
+    margin-top: 15px;
+    width: 250px;
+  }
+  .box li, .box2 li {
+    font-size: 0.9rem;
+  }
+  .prix, .prix2 {
+    border: 1px #3d1319 solid;
+    border-radius: 100%;
     margin-bottom: 15px;
-  }
-  .box, .prix p:nth-child(2) {
-    margin-top: 40px;
-    margin-bottom: 21px;
-  }
-  .prix2 p:nth-child(3) {
-    margin-top: 43px;
-  }
-  .prix2 p:nth-child(2) {
-    margin-top: 40px;
-  }
-  .description_plat li {
-    font-size: 0.8rem;
+    margin-top: 0;
+    margin-left: 40%;
   }
   .prix p, .prix2 p {
     font-size: 0.6em;
-    margin-top: 4px;
-    padding: 0;
-  }
-  .prix {
-    padding-left: 17px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    margin-left: 13px;
   }
   ul {
-    max-width: 70%;
     text-align: justify;
   }
   h1 {
@@ -407,40 +415,36 @@ header, footer {
   }
   h2 {
     font-size: 2em;
+    margin-top: 0;
   }
   body {
-    max-width: 100%;
+    max-width: 97%;
   }
   header {
-    max-width: 100%;
+    max-width: 97%;
     height: 140px;
     font-size: 0.8em;
   }
   #menu1_complet {
-    max-width: 97%;
+    width: 97%;
     height: auto;
+    padding: 8px;
+    margin-top: 0;
   }
   img {
-    max-width: 90%;
+    margin: auto;
+    max-width: 30%;
     height: auto;
-    margin: 0 auto;
   }
   a {
-    font-size: 0.8em;
+    font-size: 1.2em;
     margin: auto 9px;
   }
   .anim_bar {
-    margin: auto 10px;
-    width: auto;
-  }
-  .progress {
-    margin-left: 8px;
+    max-width: 19%;
   }
   .entree_plat_dessert {
     display: flex;
     justify-content: space-between;
-  }
-  .description_plat {
-    margin-left: 10px;
   }
 }
