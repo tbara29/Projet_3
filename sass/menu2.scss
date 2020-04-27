@@ -1,8 +1,8 @@
 @import "../utils/variables";
 
 #menu1_complet {
-    width: 700px;
-    height: 1000px;
+    width: 900px;
+    height: 1200px;
     box-shadow: $boxshadow;
     font-family: $police_menu1;
     margin: auto;
@@ -25,29 +25,14 @@ body {
 }
 
 #page {
-    width: 1189px;
-    height: 1600px;
+    max-width: 100%;
+    margin-top: 70px;
 }
 
-#contenair {
-    #menu1, #menu2, #menu3, #menu4 {
-        div img {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            -webkit-transition: .3s ease-in-out;
-            transition: .3s ease-in-out;
-        }
 
-        div:hover img {
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-        }
-    }
-}
 
 #title {
-    max-width: 100%;
-    height: 200px;
+    height: 170px;
     background: $headfoot_color;
     color: $headfoot_fontcolor;
     display: flex;
@@ -82,30 +67,45 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
 
-    & img {
-        margin-top: 30px;
-        margin-bottom: 20px;
+    p {
+        margin: 0;
+        font-size: 2rem;
+        margin-bottom: 40px;
+        color: #3d1319;
     }
 
-    h1 {
-        font-size: 2rem;
+    img {
+        min-width: 80px;
+        height: 70px;
+        margin-top: 40px;
     }
 }
 
 .entree_plat_dessert {
-    max-width: 80%;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+
+    a {
+        font-size: 1.2em;
+        margin: auto;
+        text-decoration: none;
+        padding: 0;
+        
+    
+    }
+    
+}
+.entree_plat_dessert:nth-child(1){
+    a{
+    color: #c97128;
+    }
 }
 
 img {
-    min-width: 16%;
-    height: 22px;
+    max-width: 30%;
     margin-top: 10px;
-    margin: auto;
+    margin: auto 25px;
 }
 
 .anim_bar {
@@ -117,8 +117,7 @@ img {
 
 .progress {
     padding: 0;
-    max-width: 90%;
-    margin-left: 10px;
+   
 
     &__bar {
         border-radius: 1px;
@@ -141,25 +140,29 @@ a:hover {
 }
 
 .box {
-    width: 600px;
-    display: flex;
+    width: 800px;
     justify-content: space-between;
     margin: 40px auto;
 }
 
 .box2 {
-    width: 600px;
-    display: flex;
+    width: 800px;
     justify-content: space-between;
     margin: 40px auto;
 }
+.choix_menu {
+    display: flex;
+    justify-content: space-between;
+}
+.description_plat {
+    margin-left: 30px;
+}
 
 h2 {
-    font-family: $police_menu1;
-    font-size: 2.3em;
+    font-size: 2.6em;
     text-align: center;
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin-top: 260px;
+    margin-bottom: 10px;
 }
 
 #entete_menu h1 {
@@ -187,13 +190,6 @@ p {
     margin-top: 0;
 }
 
-.box p {
-    padding-left: 12px;
-}
-
-.box2 p:nth-child(1), .box2 p:nth-child(2) {
-    padding-left: 12px;
-}
 
 .trait, .trait2 {
     margin-top: 8px;
@@ -201,12 +197,7 @@ p {
     height: 14px;
 }
 
-a {
-    font-size: 1rem;
-    margin: auto;
-    text-decoration: none;
-    text-decoration: none;
-}
+
 
 ul {
     padding: 0;
@@ -214,18 +205,27 @@ ul {
 
 li {
     list-style-type: none;
-    font-size: 0.93em;
+    font-size: 1rem;
     margin-bottom: 10px;
+    
 }
 
-.prix, .prix2 {
+
+.prix {
     width: 45px;
     margin-top: 17px;
+    
 }
 
 p {
-    font-size: 0.93em;
-    margin-bottom: 10px;
+   
+    font-size: 1em;
+    margin-bottom: 14px;
+}
+
+.prix2 {
+    width: 45px;
+    margin-top: 17px;
 }
 
 #contenair {
@@ -235,6 +235,17 @@ p {
 }
 
 #fin_menu {
+    p {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    img {
+        min-width: 70px;
+        height: 50px;
+        margin: 0;
+    }
+
     display: flex;
     justify-content: center;
 }
@@ -263,6 +274,9 @@ p {
 }
 
 .txt_position {
+    a {
+        font-size: 1.4rem;
+    }
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -272,6 +286,9 @@ p {
 }
 
 .ctct_position {
+    a {
+        font-size: 1.4rem;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,7 +408,7 @@ header, footer {
     }
 
     .description_plat {
-        margin-left: 0;
+        margin-left: 19px;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -401,22 +418,23 @@ header, footer {
         display: flex;
         flex-direction: column;
         max-width: 100%;
+       
     }
 
     .box, .box2 {
         display: flex;
         flex-direction: column;
-        margin-left: 17%;
+        max-width: 100%;
         margin-top: 15px;
-        width: 250px;
+       
 
         li {
             font-size: 0.9rem;
         }
     }
 
-    .prix, .prix2 {
-        border: 1px #3d1319 solid;
+    .prix{
+        border: 1px #c97128 solid;
         border-radius: 100%;
         margin-bottom: 15px;
         margin-top: 0;
@@ -425,8 +443,22 @@ header, footer {
         p {
             font-size: 0.6em;
             margin-bottom: 0;
-            margin-top: 5px;
-            margin-left: 13px;
+           
+            margin-left: 12px;
+        }
+    }
+    .prix2{
+        border: 1px #a76796 solid;
+        border-radius: 100%;
+        margin-bottom: 15px;
+        margin-top: 0;
+        margin-left: 40%;
+
+        p {
+            font-size: 0.6em;
+            margin-bottom: 0;
+           
+            margin-left: 12px;
         }
     }
 
@@ -466,16 +498,17 @@ header, footer {
         height: auto;
     }
 
-    a {
-        font-size: 1.2em;
-        margin: auto 9px;
-    }
+   
 
     .anim_bar {
-        max-width: 19%;
+        max-width: 47%;
     }
 
     .entree_plat_dessert {
+        a {
+            font-size: 0.88rem;
+            margin: auto 9px;
+        }
         display: flex;
         justify-content: space-between;
     }

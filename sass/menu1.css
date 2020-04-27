@@ -24,18 +24,6 @@ body {
   margin-top: 70px;
 }
 
-#contenair #menu1 div img, #contenair #menu2 div img, #contenair #menu3 div img, #contenair #menu4 div img {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-#contenair #menu1 div:hover img, #contenair #menu2 div:hover img, #contenair #menu3 div:hover img, #contenair #menu4 div:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
 #title {
   height: 170px;
   background: #579c87;
