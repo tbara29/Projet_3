@@ -25,6 +25,10 @@ body {
    
 }
 
+h1{
+    font-size: 3rem;
+}
+
 #footer {
     height: 100px;
     background: $headfoot_color;
@@ -114,7 +118,7 @@ h2 {
 #menu2 {
     background-color: #fff5fe;
     margin: auto;
-    margin-right: 120px;
+    
 
     h2 {
         color: #d8852e;
@@ -465,25 +469,28 @@ header, footer {
     }
 
     #menu1{
-        max-width: 90%;
+        width: 90%;
         height: 380px;
+        margin: 35px auto;
     }
     #menu2{
-        max-width: 90%;
+        width: 90%;
         height: 380px;
-        margin: auto;
+        margin: 35px auto;
         p{
             font-size: 1.5rem;
         }
     }
     
     #menu3{
-        max-width: 90%;
+        width: 90%;
         height: 380px;
+        margin: 35px auto;
     }
     #menu4{
-        max-width: 90%;
+        width: 90%;
         height: 380px;
+        margin: 35px auto;
     }
     #footer{
         font-size: 0.8rem;
@@ -508,9 +515,5 @@ header, footer {
 
     }
 }
-@media  screen and (max-width: 1920px) {
-    #menu1, #menu2, #menu3, #menu4{
-        margin: auto;
-    }
-}
+
 

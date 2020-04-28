@@ -23,6 +23,10 @@ body {
   z-index: 1;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 #footer {
   height: 100px;
   background: #579c87;
@@ -77,7 +81,7 @@ body {
 #menu1 {
   background-color: #FCDFDB;
   margin: auto;
-  width: 400px;
+  width: 45%;
   height: 600px;
   margin-bottom: 60px;
   margin-top: 60px;
@@ -111,8 +115,7 @@ h2 {
 #menu2 {
   background-color: #fff5fe;
   margin: auto;
-  margin-right: 120px;
-  width: 400px;
+  width: 45%;
   height: 600px;
   margin-bottom: 60px;
   margin-top: 60px;
@@ -142,7 +145,7 @@ h2 {
 #menu3 {
   background-color: #f9f9f9;
   margin: auto;
-  width: 400px;
+  width: 45%;
   height: 600px;
   margin-bottom: 60px;
   margin-top: 60px;
@@ -172,7 +175,7 @@ h2 {
 #menu4 {
   background-color: #fdfffd;
   margin: auto;
-  width: 400px;
+  width: 45%;
   height: 600px;
   margin-bottom: 60px;
   margin-top: 60px;
@@ -469,24 +472,27 @@ header, footer {
     margin-top: 100px;
   }
   #menu1 {
-    max-width: 90%;
+    width: 90%;
     height: 380px;
+    margin: 35px auto;
   }
   #menu2 {
-    max-width: 90%;
+    width: 90%;
     height: 380px;
-    margin: auto;
+    margin: 35px auto;
   }
   #menu2 p {
     font-size: 1.5rem;
   }
   #menu3 {
-    max-width: 90%;
+    width: 90%;
     height: 380px;
+    margin: 35px auto;
   }
   #menu4 {
-    max-width: 90%;
+    width: 90%;
     height: 380px;
+    margin: 35px auto;
   }
   #footer {
     font-size: 0.8rem;
@@ -504,11 +510,5 @@ header, footer {
   .ctct_position {
     max-width: 30%;
     margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 1920px) {
-  #menu1, #menu2, #menu3, #menu4 {
-    margin: auto;
   }
 }
