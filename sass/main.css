@@ -506,3 +506,9 @@ header, footer {
     margin-bottom: 20px;
   }
 }
+
+@media screen and (max-width: 1920px) {
+  #menu1, #menu2, #menu3, #menu4 {
+    margin: auto;
+  }
+}
