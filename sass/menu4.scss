@@ -1,15 +1,16 @@
 @import "../utils/variables";
 
 #menu1_complet {
-    width: 700px;
-    height: 1000px;
+    width: 900px;
+    height: 1200px;
     box-shadow: $boxshadow;
     font-family: $police_menu1;
     margin: auto;
     margin-bottom: 40px;
-    margin-top: 260px;
+    margin-top: 40px;
     position: relative;
     background-color: #fff5fe;
+   
 
     h2 {
         color: #d8852e;
@@ -25,29 +26,14 @@ body {
 }
 
 #page {
-    width: 1189px;
-    height: 1600px;
+    max-width: 100%;
+    margin-top: 170px;
 }
 
-#contenair {
-    #menu1, #menu2, #menu3, #menu4 {
-        div img {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            -webkit-transition: .3s ease-in-out;
-            transition: .3s ease-in-out;
-        }
 
-        div:hover img {
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-        }
-    }
-}
 
 #title {
-    max-width: 100%;
-    height: 200px;
+    height: 170px;
     background: $headfoot_color;
     color: $headfoot_fontcolor;
     display: flex;
@@ -69,43 +55,48 @@ body {
 
     max-width: 100%;
     margin: auto;
-    background-image: linear-gradient(to bottom, rgb(216, 133, 46) 0%, rgb(144, 91, 253) 100%);
-    background: -webkit-linear-gradient();
-    -webkit-background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    
 }
 
 #entete_menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
 
-    & img {
-        margin-top: 30px;
-        margin-bottom: 20px;
+    p {
+        margin: 0;
+        font-size: 2rem;
+        margin-bottom: 40px;
+       
     }
 
-    h1 {
-        font-size: 2rem;
+    img {
+        min-width: 80px;
+        height: 70px;
+        margin-top: 40px;
     }
 }
 
 .entree_plat_dessert {
-    max-width: 80%;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+
+    a {
+        font-size: 1.2em;
+        margin: auto;
+        text-decoration: none;
+        padding: 0;
+        
+    
+    }
+    
 }
 
+
 img {
-    min-width: 16%;
-    height: 22px;
+    max-width: 30%;
     margin-top: 10px;
-    margin: auto;
+    margin: auto 25px;
 }
 
 .anim_bar {
@@ -117,14 +108,13 @@ img {
 
 .progress {
     padding: 0;
-    max-width: 90%;
-    margin-left: 10px;
+   
 
     &__bar {
         border-radius: 1px;
         width: 100%;
         height: 2px;
-        background-image: linear-gradient(to right, rgb(216, 133, 46) 0%, rgb(144, 91, 253) 100%);
+        background-image: linear-gradient(to right, rgb(2, 40, 221) 0%, rgb(8, 137, 251) 100%);
         background: -webkit-linear-gradient();
         transform-origin: left;
         transform: scaleX(0);
@@ -141,35 +131,40 @@ a:hover {
 }
 
 .box {
-    width: 600px;
-    display: flex;
+    width: 800px;
     justify-content: space-between;
     margin: 40px auto;
 }
 
 .box2 {
-    width: 600px;
-    display: flex;
+    width: 800px;
     justify-content: space-between;
     margin: 40px auto;
 }
+.choix_menu {
+    display: flex;
+    justify-content: space-between;
+}
+.description_plat {
+    margin-left: 30px;
+}
 
 h2 {
-    font-family: $police_menu1;
-    font-size: 2.3em;
+    font-size: 2.6em;
     text-align: center;
-    margin-top: 35px;
-    margin-bottom: 40px;
+    margin-top: 260px;
+    margin-bottom: 10px;
 }
 
 #entete_menu h1 {
-    background-image: linear-gradient(to right, rgb(216, 133, 46) 0%, rgb(144, 91, 253) 100%);
+    background-image: linear-gradient(to right, rgb(2, 40, 221) 0%, rgb(8, 137, 251) 100%);
     background: -webkit-linear-gradient();
     -webkit-background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
+    
     margin-bottom: 50px;
 }
 
@@ -187,13 +182,6 @@ p {
     margin-top: 0;
 }
 
-.box p {
-    padding-left: 12px;
-}
-
-.box2 p:nth-child(1), .box2 p:nth-child(2) {
-    padding-left: 12px;
-}
 
 .trait, .trait2 {
     margin-top: 8px;
@@ -201,12 +189,7 @@ p {
     height: 14px;
 }
 
-a {
-    font-size: 1rem;
-    margin: auto;
-    text-decoration: none;
-    text-decoration: none;
-}
+
 
 ul {
     padding: 0;
@@ -214,18 +197,27 @@ ul {
 
 li {
     list-style-type: none;
-    font-size: 0.93em;
+    font-size: 1rem;
     margin-bottom: 10px;
+    
 }
 
-.prix, .prix2 {
+
+.prix {
     width: 45px;
     margin-top: 17px;
+    
 }
 
 p {
-    font-size: 0.93em;
-    margin-bottom: 10px;
+   
+    font-size: 1em;
+    margin-bottom: 14px;
+}
+
+.prix2 {
+    width: 45px;
+    margin-top: 17px;
 }
 
 #contenair {
@@ -235,6 +227,17 @@ p {
 }
 
 #fin_menu {
+    p {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    img {
+        min-width: 70px;
+        height: 50px;
+        margin: 0;
+    }
+
     display: flex;
     justify-content: center;
 }
@@ -263,6 +266,9 @@ p {
 }
 
 .txt_position {
+    a {
+        font-size: 1.4rem;
+    }
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -272,6 +278,9 @@ p {
 }
 
 .ctct_position {
+    a {
+        font-size: 1.4rem;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,7 +354,7 @@ header, footer {
 
 @media all and (max-width: 1024px) {
     #page {
-        max-width: 100%;
+        max-width: 97%;
         height: auto;
         margin-top: 30px auto;
     }
@@ -358,22 +367,17 @@ header, footer {
         }
     }
 
-    #entete_menu h1 {
-        margin-top: 25px;
-    }
-
     #footer {
-        max-width: 100%;
+        max-width: 97%;
         height: 80px;
     }
 
     .footer_txtcolor {
         max-width: 97%;
-        margin: auto;
     }
 
     .txt_position a, .ctct_position a {
-        font-size: 0.8em;
+        font-size: 1rem;
     }
 
     .txt_position, .ctct_position {
@@ -385,45 +389,72 @@ header, footer {
         max-width: 50%;
     }
 
-    #contener, #fin_menu, .box2, .box, .entree_plat_dessert {
+    #contener, #fin_menu, .entree_plat_dessert {
         max-width: 100%;
         max-height: 80%;
     }
 
     .box li, .box2 li {
         font-size: 0.6em;
+        margin-bottom: 20px;
+    }
+
+    .description_plat {
+        margin-left: 19px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .choix_menu {
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+       
+    }
+
+    .box, .box2 {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-top: 15px;
+       
+
+        li {
+            font-size: 0.9rem;
+        }
+    }
+
+    .prix{
+        border: 1px #c97128 solid;
+        border-radius: 100%;
         margin-bottom: 15px;
-    }
+        margin-top: 0;
+        margin-left: 40%;
 
-    .box, .prix p:nth-child(2) {
-        margin-top: 40px;
-        margin-bottom: 21px;
+        p {
+            font-size: 0.6em;
+            margin-bottom: 0;
+           
+            margin-left: 12px;
+        }
     }
+    .prix2{
+        border: 1px #a76796 solid;
+        border-radius: 100%;
+        margin-bottom: 15px;
+        margin-top: 0;
+        margin-left: 40%;
 
-    .prix2 p:nth-child(3) {
-        margin-top: 43px;
-    }
-
-    .prix2 p:nth-child(2) {
-        margin-top: 40px;
-    }
-
-    .description_plat li {
-        font-size: 0.8rem;
-    }
-
-    .prix p, .prix2 p {
-        font-size: 0.6em;
-        margin-top: 4px;
-        padding: 0;
-    }
-
-    .prix {
-        padding-left: 17px;
+        p {
+            font-size: 0.6em;
+            margin-bottom: 0;
+           
+            margin-left: 12px;
+        }
     }
 
     ul {
-        max-width: 70%;
         text-align: justify;
     }
 
@@ -433,49 +464,44 @@ header, footer {
 
     h2 {
         font-size: 2em;
+        margin-top: 0;
     }
 
     body {
-        max-width: 100%;
+        max-width: 97%;
     }
 
     header {
-        max-width: 100%;
+        max-width: 97%;
         height: 140px;
         font-size: 0.8em;
     }
 
     #menu1_complet {
-        max-width: 97%;
+        width: 97%;
         height: auto;
+        padding: 8px;
+        margin-top: 0;
     }
 
     img {
-        max-width: 90%;
+        margin: auto;
+        max-width: 30%;
         height: auto;
-        margin: 0 auto;
     }
 
-    a {
-        font-size: 0.8em;
-        margin: auto 9px;
-    }
+   
 
     .anim_bar {
-        margin: auto 10px;
-        width: auto;
-    }
-
-    .progress {
-        margin-left: 8px;
+        max-width: 47%;
     }
 
     .entree_plat_dessert {
+        a {
+            font-size: 0.88rem;
+            margin: auto 9px;
+        }
         display: flex;
         justify-content: space-between;
-    }
-
-    .description_plat {
-        margin-left: 10px;
     }
 }

@@ -29,7 +29,7 @@ body {
   color: #fdcb46;
   display: flex;
   justify-content: center;
-  font-size: 2.3em;
+  font-size: 2rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -54,16 +54,11 @@ body {
   align-items: center;
 }
 
-#entete_menu p {
-  margin: 0;
-  font-size: 2rem;
-  margin-bottom: 40px;
-}
-
-#entete_menu img {
-  min-width: 80px;
-  height: 70px;
-  margin-top: 40px;
+#entete_menu h1 {
+  font-family: 'DancingScriptRegular';
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
 }
 
 .entree_plat_dessert {
@@ -139,7 +134,7 @@ h2 {
 }
 
 #entete_menu h1 {
-  background-image: linear-gradient(to right, #0228dd 0%, #0889fb 100%);
+  background-image: linear-gradient(to right, #224999 10%, #0889fb 90%);
   background: -webkit-linear-gradient();
   -webkit-background-clip: text;
   -webkit-background-clip: text;
@@ -444,6 +439,15 @@ header, footer {
     margin: auto;
     max-width: 30%;
     height: auto;
+  }
+  #entete_menu {
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #entete_menu h1 {
+    width: 100%;
+    text-align: center;
   }
   .anim_bar {
     max-width: 47%;
