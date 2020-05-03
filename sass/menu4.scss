@@ -48,6 +48,11 @@ body {
     div{
         text-align: center;
     }
+    a{
+        list-style-type: none;
+        text-decoration: none;
+        color: $headfoot_fontcolor;
+    }
 }
 
 #contener {

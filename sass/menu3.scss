@@ -48,6 +48,11 @@ body {
     div{
         text-align: center;
     }
+    a{
+        list-style-type: none;
+        text-decoration: none;
+        color: $headfoot_fontcolor;
+    }
 
 }
 
@@ -96,6 +101,7 @@ img {
 }
 
 .anim_bar {
+    text-align: center;
     display: flex;
     flex-direction: column;
     margin: auto;

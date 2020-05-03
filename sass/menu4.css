@@ -42,6 +42,12 @@ body {
   text-align: center;
 }
 
+#title a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fdcb46;
+}
+
 #contener {
   max-width: 100%;
   margin: auto;

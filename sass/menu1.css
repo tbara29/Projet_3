@@ -43,6 +43,12 @@ body {
   font-family: "Arial Black", arial;
 }
 
+#title a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fdcb46;
+}
+
 #contener {
   font-family: 'segoe print', 'bradley hand bold';
   max-width: 100%;

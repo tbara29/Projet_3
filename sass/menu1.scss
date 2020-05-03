@@ -30,6 +30,11 @@ body {
     h1 {
         font-family: "Arial Black", arial;
     }
+    a{
+        list-style-type: none;
+        text-decoration: none;
+        color: $headfoot_fontcolor;
+    }
 
     height: 170px;
     background: $headfoot_color;
