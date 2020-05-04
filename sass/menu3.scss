@@ -30,7 +30,7 @@ body {
     margin-top: 170px;
 }
 
-
+/* Header */ 
 
 #title {
     height: 170px;
@@ -108,6 +108,8 @@ img {
     width: 600px;
 }
 
+/* Animation Soulignement*/ 
+
 .progress {
     padding: 0;
    
@@ -157,6 +159,7 @@ h2 {
     margin-top: 260px;
     margin-bottom: 10px;
 }
+/* Dégrader sur nom du restaurant*/ 
 
 #entete_menu h1 {
     background-image: linear-gradient(to right, rgb(34, 73, 153) 10%, rgb(8, 137, 251) 90%);
@@ -184,6 +187,7 @@ p {
     margin-top: 0;
 }
 
+/* Trait de séparation*/ 
 
 .trait, .trait2 {
     margin-top: 8px;
@@ -243,6 +247,8 @@ p {
     display: flex;
     justify-content: center;
 }
+
+/* Footer*/ 
 
 #footer {
     height: 100px;

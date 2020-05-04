@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #menu1_complet {
   width: 900px;
   height: 1200px;
@@ -23,6 +24,7 @@ body {
   margin-top: 170px;
 }
 
+/* Header */
 #title {
   height: 170px;
   background: #579c87;
@@ -92,6 +94,7 @@ img {
   width: 600px;
 }
 
+/* Animation Soulignement*/
 .progress {
   padding: 0;
 }
@@ -139,6 +142,7 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* Dégrader sur nom du restaurant*/
 #entete_menu h1 {
   background-image: linear-gradient(to right, #224999 10%, #0889fb 90%);
   background: -webkit-linear-gradient();
@@ -162,6 +166,7 @@ p {
   margin-top: 0;
 }
 
+/* Trait de séparation*/
 .trait, .trait2 {
   margin-top: 8px;
   width: 80px;
@@ -215,6 +220,7 @@ p {
   margin: 0;
 }
 
+/* Footer*/
 #footer {
   height: 100px;
   width: 100%;
