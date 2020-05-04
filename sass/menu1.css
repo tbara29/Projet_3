@@ -192,12 +192,6 @@ p {
   margin-top: 17px;
 }
 
-#contenair {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 #fin_menu {
   display: flex;
   justify-content: center;
