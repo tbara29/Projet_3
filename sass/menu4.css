@@ -93,7 +93,6 @@ img {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 600px;
 }
 
 .progress {
@@ -385,28 +384,28 @@ header, footer {
     font-size: 0.9rem;
   }
   .prix {
-    border: 1px #c97128 solid;
+    border: 1px #3d9339 solid;
     border-radius: 100%;
     margin-bottom: 15px;
     margin-top: 0;
-    margin-left: 40%;
+    align-self: center;
   }
   .prix p {
     font-size: 0.6em;
     margin-bottom: 0;
-    margin-left: 12px;
+    text-align: center;
   }
   .prix2 {
-    border: 1px #a76796 solid;
+    border: 1px #3d9339 solid;
     border-radius: 100%;
     margin-bottom: 15px;
     margin-top: 0;
-    margin-left: 40%;
+    align-self: center;
   }
   .prix2 p {
     font-size: 0.6em;
     margin-bottom: 0;
-    margin-left: 12px;
+    text-align: center;
   }
   ul {
     text-align: justify;

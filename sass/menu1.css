@@ -98,7 +98,6 @@ img {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 600px;
 }
 
 .progress {
@@ -403,13 +402,13 @@ header, footer {
     border-radius: 100%;
     margin-bottom: 15px;
     margin-top: 0;
-    margin-left: 40%;
+    align-self: center;
   }
   .prix p, .prix2 p {
     font-size: 0.6em;
     margin-bottom: 0;
     margin-top: 5px;
-    margin-left: 13px;
+    text-align: center;
   }
   ul {
     text-align: justify;

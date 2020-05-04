@@ -118,7 +118,7 @@ img {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 600px;
+    
 }
 
 .progress {
@@ -445,13 +445,13 @@ header, footer {
         border-radius: 100%;
         margin-bottom: 15px;
         margin-top: 0;
-        margin-left: 40%;
+        align-self: center;
 
         p {
             font-size: 0.6em;
             margin-bottom: 0;
            
-            margin-left: 12px;
+            text-align: center;
         }
     }
     .prix2{
@@ -459,13 +459,13 @@ header, footer {
         border-radius: 100%;
         margin-bottom: 15px;
         margin-top: 0;
-        margin-left: 40%;
+        align-self: center;
 
         p {
             font-size: 0.6em;
             margin-bottom: 0;
            
-            margin-left: 12px;
+            text-align: center;
         }
     }
 

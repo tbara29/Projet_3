@@ -21,7 +21,7 @@ body {
 
 #page {
   max-width: 100%;
-  margin-top: 170px;
+  margin-top: 180px;
 }
 
 /* Header */
@@ -91,7 +91,6 @@ img {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 600px;
 }
 
 /* Animation Soulignement*/
@@ -346,7 +345,7 @@ header, footer {
   #page {
     max-width: 97%;
     height: auto;
-    margin-top: 30px auto;
+    margin: auto;
   }
   #title {
     height: 140px;
@@ -400,28 +399,28 @@ header, footer {
     font-size: 0.9rem;
   }
   .prix {
-    border: 1px #c97128 solid;
+    border: 1px #0228dd solid;
     border-radius: 100%;
     margin-bottom: 15px;
     margin-top: 0;
-    margin-left: 40%;
+    align-self: center;
   }
   .prix p {
     font-size: 0.6em;
     margin-bottom: 0;
-    margin-left: 12px;
+    text-align: center;
   }
   .prix2 {
-    border: 1px #a76796 solid;
+    border: 1px #0228dd solid;
     border-radius: 100%;
     margin-bottom: 15px;
     margin-top: 0;
-    margin-left: 40%;
+    align-self: center;
   }
   .prix2 p {
     font-size: 0.6em;
     margin-bottom: 0;
-    margin-left: 12px;
+    text-align: center;
   }
   ul {
     text-align: justify;
