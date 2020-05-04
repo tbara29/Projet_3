@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Conteneur menu*/
 #menu1_complet {
   width: 900px;
   height: 1200px;
@@ -14,15 +16,21 @@
   color: #d8852e;
 }
 
+#contener {
+  max-width: 100%;
+  margin: auto;
+}
+
 body {
   margin-bottom: 200px;
 }
 
 #page {
   max-width: 100%;
-  margin-top: 370px;
+  margin-top: 270px;
 }
 
+/* Header*/
 #title {
   height: 170px;
   background: #579c87;
@@ -48,11 +56,6 @@ body {
   color: #fdcb46;
 }
 
-#contener {
-  max-width: 100%;
-  margin: auto;
-}
-
 #entete_menu {
   display: flex;
   flex-direction: column;
@@ -65,12 +68,7 @@ body {
   margin-bottom: 40px;
 }
 
-#entete_menu img {
-  min-width: 80px;
-  height: 70px;
-  margin-top: 40px;
-}
-
+/* Présentation du menu*/
 .entree_plat_dessert {
   display: flex;
   justify-content: space-between;
@@ -90,6 +88,7 @@ img {
   margin: auto 25px;
 }
 
+/* Animation soulignement*/
 .anim_bar {
   display: flex;
   flex-direction: column;
@@ -116,6 +115,7 @@ a:hover + .progress > .progress__bar {
   transform: scaleX(1);
 }
 
+/* Conteneur description des plats*/
 .box {
   width: 800px;
   justify-content: space-between;
@@ -144,6 +144,7 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* Nom du restaurant*/
 #entete_menu h1 {
   background-image: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
   background: -webkit-linear-gradient();
@@ -168,12 +169,14 @@ p {
   margin-top: 0;
 }
 
+/* Trait de séparation SVG*/
 .trait, .trait2 {
   margin-top: 8px;
   width: 80px;
   height: 14px;
 }
 
+/* Mise en page des plats et prix*/
 ul {
   padding: 0;
 }
@@ -199,28 +202,7 @@ p {
   margin-top: 17px;
 }
 
-#contenair {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-#fin_menu {
-  display: flex;
-  justify-content: center;
-}
-
-#fin_menu p {
-  margin: 0;
-  font-size: 2rem;
-}
-
-#fin_menu img {
-  min-width: 70px;
-  height: 50px;
-  margin: 0;
-}
-
+/* Footer */
 #footer {
   height: 100px;
   width: 100%;
@@ -240,6 +222,7 @@ p {
   margin-bottom: 10px;
 }
 
+/* Mentions légales et Contact */
 .txt_position a {
   font-family: "Arial Black", arial;
   width: 250px;
@@ -342,10 +325,12 @@ header, footer {
   font-family: "Arial Black", arial;
 }
 
+/* Média queries */
 @media all and (max-width: 1024px) {
   #page {
     max-width: 97%;
     height: auto;
+    margin: 0;
     margin-top: 30px auto;
   }
   #title {
