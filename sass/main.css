@@ -455,6 +455,16 @@ header, footer {
   right: 0;
 }
 
+#mentions {
+  margin-top: 270px;
+  text-align: center;
+}
+
+#wait {
+  margin-top: 30px;
+  text-align: center;
+}
+
 .fonts_menu1 h2 {
   margin-top: 20px;
 }
