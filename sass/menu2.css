@@ -359,7 +359,7 @@ header, footer {
   #page {
     max-width: 97%;
     height: auto;
-    margin-top: 30px auto;
+    margin: auto;
   }
   #title {
     height: 140px;
