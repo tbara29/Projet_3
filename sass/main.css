@@ -23,6 +23,12 @@ body {
   z-index: 1;
 }
 
+#title a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fdcb46;
+}
+
 h1 {
   font-size: 3rem;
 }
@@ -32,11 +38,11 @@ h1 {
   background: #579c87;
 }
 
-#contenair {
-  margin-top: 150px;
+#conteneur {
+  margin-top: 90px;
 }
 
-#contenair a {
+#conteneur a {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -44,25 +50,25 @@ h1 {
   transition: .3s ease-in-out;
 }
 
-#contenair #menu1:hover a {
+#conteneur #menu1:hover a {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   opacity: 0.4;
 }
 
-#contenair #menu2:hover a {
+#conteneur #menu2:hover a {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   opacity: 0.4;
 }
 
-#contenair #menu3:hover a {
+#conteneur #menu3:hover a {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   opacity: 0.4;
 }
 
-#contenair #menu4:hover a {
+#conteneur #menu4:hover a {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   opacity: 0.4;

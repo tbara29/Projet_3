@@ -8,6 +8,7 @@ body {
 
 #page {
     max-width: 100%;
+   
 }
 
 #title {
@@ -22,6 +23,12 @@ body {
     left: 0;
     right: 0;
     z-index: 1;
+    a{
+        list-style-type: none;
+        text-decoration: none;
+        color: $headfoot_fontcolor;
+    }
+
    
 }
 
@@ -34,8 +41,8 @@ h1{
     background: $headfoot_color;
 }
 
-#contenair {
-    margin-top: 150px;
+#conteneur {
+    margin-top: 90px;
    
     a {
         opacity: 1;
